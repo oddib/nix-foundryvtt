@@ -58,7 +58,7 @@ the version of FoundryVTT you plan to run on your server. See below for how to u
     enable = false;
     hostName = "<hostname goes here>";
     minifyStaticFiles = true;
-    package = inputs.foundryvtt.packages.${pkgs.system}.foundryvtt_12; # Sets the version to the latest FoundryVTT v12.
+    package = inputs.foundryvtt.packages.${pkgs.stdenv.hostPlatform.system}.foundryvtt_12; # Sets the version to the latest FoundryVTT v12.
     proxyPort = 443;
     proxySSL = true;
     upnp = false;
